@@ -1,0 +1,23 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "Interviewing is hard... but with practice we succeed",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cache123/faang-prep.git"
+  },
+  "author": "Samuel Singer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cache123/faang-prep/issues"
+  },
+  "homepage": "https://github.com/Cache123/faang-prep#readme"
+}

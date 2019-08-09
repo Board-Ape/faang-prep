@@ -1,0 +1,1 @@
+const buildArray = './array';
