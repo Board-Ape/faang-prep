@@ -5,6 +5,15 @@ export default class BuildArray {
 
     displayItemsInState() {
         this.state.forEach((item, index) => console.log(index, ':', item))
-        return []
     }
+
+    add(value) {
+        const stateLength = this.state.length;
+        
+        this.state[stateLength] = value;
+    }   
 }
+
+const a = new BuildArray();
+a.add('fourth')
+console.log(a.state)

@@ -1,6 +1,10 @@
 import BuildArray from "./BuildArray";
 
 describe("BuildArray", () => {
+    beforeEach(() => {
+        // Clear all instances amd calls to constructor and all methods;
+    })
+
     it("should have called the constructor with the correct default state", () => {
         const newBuildArray = new BuildArray();
         const expected = {
