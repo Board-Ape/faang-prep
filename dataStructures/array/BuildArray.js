@@ -7,13 +7,16 @@ export default class BuildArray {
         this.state.forEach((item, index) => console.log(index, ':', item))
     }
 
-    add(value) {
+    push(value) {
         const stateLength = this.state.length;
         
         this.state[stateLength] = value;
-    }   
+    }
+
+    pop() {
+        const stateLength = this.state.length;
+        
+    }
 }
 
-const a = new BuildArray();
-a.add('fourth')
-console.log(a.state)
+

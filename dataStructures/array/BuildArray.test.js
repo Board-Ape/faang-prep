@@ -23,5 +23,24 @@ describe("BuildArray", () => {
         expect(displayItems).toHaveBeenCalledTimes(1);
     });
 
+    it('push() will push to the end of the array', () => {
+        const newBuildArray = new BuildArray;
+
+        newBuildArray.push('fourth')
+        const expected = ['first', 'second', 'third', 'fourth']
+
+        expect(newBuildArray.state).toEqual(expected)
+    })
+
+    it('push() will push to an empty array', () => {
+        const newBuildArray = new BuildArray;
+        
+        newBuildArray.state = [];
+        newBuildArray.push('first')
+        const expected = ['first'];
+
+        expect(newBuildArray.state).toEqual(expected)
+    })
+
 
 })
