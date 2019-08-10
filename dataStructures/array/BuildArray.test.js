@@ -1,4 +1,4 @@
-import BuildArray from "./BuildArray";
+import BuildArray from "./BuildArraySolution";
 
 describe("BuildArray", () => {
     beforeEach(() => {
