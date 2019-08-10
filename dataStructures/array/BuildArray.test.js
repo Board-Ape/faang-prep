@@ -14,6 +14,7 @@ describe("BuildArray", () => {
         expect(newBuildArray).toEqual(expected);
     });
 
+    // push()
     it("should be able to create and call a mock function", () => {
         const displayItems = BuildArray.prototype.displayItems = jest.fn();
         const buildArray = new BuildArray();
@@ -42,5 +43,14 @@ describe("BuildArray", () => {
         expect(newBuildArray.state).toEqual(expected)
     })
 
+    // pop()
+    it('should remove last value from state and return that value', () => {
+        const nBA = new BuildArray();
+
+        const poppedValue = nBA.pop()
+        
+        expect(poppedValue).toEqual('third')
+
+    })
 
 })
