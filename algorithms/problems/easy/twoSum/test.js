@@ -19,7 +19,11 @@ describe('twoSumBruteForce', () => {
     });
 
     it("should produce the correct result if...", () => {
-        expect(twoSumBruteForce([2, 7, 11, 15], 26)).toEqual([2, 3]);
+        expect(twoSumBruteForce([3, 2, 4], 6)).toEqual([1, 2]);
+    });
+
+    it("should produce the correct result if...", () => {
+        expect(twoSumBruteForce([1, 2, 5, 5, 11], 10)).toEqual([2, 3]);
     });
     
 })
